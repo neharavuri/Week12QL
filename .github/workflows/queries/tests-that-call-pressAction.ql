@@ -28,7 +28,7 @@ predicate calls(Function caller) {
   )
 }
 
-from Function function
+from Function test
 where isTest(test) and
       calls(test)
 select function, "is a test that calls pressAction"
