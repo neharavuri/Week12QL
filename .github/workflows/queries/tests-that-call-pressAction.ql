@@ -14,7 +14,7 @@ predicate isTestThatPressesActionKey(Function test) {
     describe.getCalleeName() = "describe" and
     it.getCalleeName() = "it" and
     it.getParent*() = describe and
-    test.getName().include("pressActionKey") and
+    test.getName().includes("pressActionKey") and
     test = it.getArgument(1)
   )
 }
