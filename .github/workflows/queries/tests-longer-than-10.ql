@@ -7,7 +7,7 @@
 import javascript
 
 /**
- * Holds if a function is a test.
+ * Holds if a function is a test longer than 10 lines
  */
 predicate isTestLongerThan10(Function test) {
   exists(CallExpr describe, CallExpr it |
