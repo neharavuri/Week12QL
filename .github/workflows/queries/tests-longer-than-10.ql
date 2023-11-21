@@ -20,5 +20,5 @@ predicate isTestLongerThan10(Function test) {
 }
 
 from Function function
-where isTestLongerThan10(function) and
-select function, "is a test"
+where isTestLongerThan10(function)
+select function, "is a test longer than 10 lines"
