@@ -31,4 +31,4 @@ predicate calls(Function caller) {
 from Function test
 where isTest(test) and
       calls(test)
-select function, "is a test that calls pressAction"
+select test, "is a test that calls pressAction"
