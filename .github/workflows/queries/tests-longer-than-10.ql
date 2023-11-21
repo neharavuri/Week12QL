@@ -14,7 +14,7 @@ predicate isTestLongerThan10(Function test) {
     describe.getCalleeName() = "describe" and
     it.getCalleeName() = "it" and
     it.getParent*() = describe and
-    it.getArgument(1).getNumLines() >= 10 and
+    test.getNumLines() >= 10 and
     test = it.getArgument(1)
   )
 }
